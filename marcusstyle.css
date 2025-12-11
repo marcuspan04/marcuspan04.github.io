@@ -322,3 +322,44 @@ p {
 	color: #C7CCD5;           /* silver hover */
     	font-style: italic;       /* italic on hover */
 }
+
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+  /* Navbar becomes vertical & spaced */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  /* Logo becomes smaller */
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Headshot scales properly */
+  .hero-image img,
+  img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Prevent huge overflow */
+  .hero-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+}
