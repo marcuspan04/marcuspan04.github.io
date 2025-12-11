@@ -328,20 +328,32 @@ p {
 
   /* Navbar becomes vertical & spaced */
   .navbar {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0;
+    gap: 8px;
+    overflow: visible; /* prevents being cut off */
   }
 
+  /* Nav items stack vertically */
   .navbar a {
-    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
     padding: 6px 0;
+    white-space: normal; /* prevents text from forcing a single line */
   }
 
-  /* Logo becomes smaller */
+  /* Logo centered and resized */
   .logo img {
     width: 40px;
     height: 40px;
+    display: block;
+    margin: 0 auto;
   }
 
   /* Headshot scales properly */
