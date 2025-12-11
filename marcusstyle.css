@@ -1,0 +1,324 @@
+
+body {
+	height: 100%;
+	background-image: url("Marcus Website Background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Inter', sans-serif;
+	color: white;
+	overflow-x: hidden;
+}
+
+* {
+	font-family: 'Inter', sans-serif;
+}
+
+.fullscreen {
+    	width: 100%;
+    	height: 100vh;
+    	position: relative;
+    	justify-content: space-between;
+    	align-items: flex-end; /* <-- THIS makes the image touch bottom */
+    	padding: 40px;  /* remove bottom padding */
+    	box-sizing: border-box;
+}
+
+.hero-img {
+    	position: absolute;
+    	bottom: -10px;   /* distance from bottom */
+    	right: 50px;   /* distance from right */
+    	height: 80vh;
+	filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.55));
+
+}
+
+.title {
+	position: absolute;
+    	top: 50%;
+	left: 50px;
+	transform: translateY(-50%);
+	max-width: 35vw;
+}
+
+
+h1 {
+    	font-size: 6vw;
+	margin-bottom: 0.2em;
+	line-height: 1; /* tighter, cleaner block */
+}
+
+h2 {
+    	font-size: 3vw;
+	color: #C7CCD5; /* soft silver */
+	font-style: italic;
+	margin-top: 0em;
+	line-height: 1.25; /* tighter, cleaner block */
+}	
+
+h3 {
+    	font-size: 2vw;
+	color: #C7CCD5; /* soft silver */
+	font-style: italic;
+	margin-top: 0em;
+	top: -50px;
+	line-height: 1.25; /* tighter, cleaner block */
+	font-weight: 400;
+}	
+
+h4 {
+    	font-size: 2vw;
+	font-style: italic;
+	margin-top: 0em;
+	top: -50px;
+	line-height: 1.25; /* tighter, cleaner block */
+	font-weight: 400;
+}	
+
+h5 {
+    	font-size: 1vw;
+	font-style: italic;
+	margin-top: 0em;
+	top: -50px;
+	line-height: 1.25; /* tighter, cleaner block */
+	font-weight: 400;
+}	
+
+p {
+	font-size: 1.5vw;
+	margin-bottom: 0.2em;
+	line-height: 1.25;
+	font-weight: 400;
+	color: #C7CCD5; /* soft silver */
+}
+
+.p-style {
+    font-size: 0.8vw;
+	margin-bottom: 0.2em;
+	line-height: 1.25;
+	font-weight: 400;
+	color: #C7CCD5; /* soft silver */
+}
+
+
+.title2 {
+	position: absolute;
+	left: 50px;
+	max-width: 35vw;
+}
+
+.title3 {
+	width: 100%;
+    display: flex;
+    justify-content: center; /* centers left–right */
+}
+
+.navbar {
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+    	padding: 20px 40px;
+   	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	z-index: 1000;
+    	background: transparent;
+    	font-family: 'Inter', sans-serif;
+	max-width: 1300px;
+	margin: 0 auto;
+	
+}
+
+.nav-left {
+    	color: white;
+    	font-size: 22px;
+    	font-weight: 700;
+	margin-left: 10px; /* subtle */
+}
+
+/* TEXT-ONLY BUTTONS */
+.nav-right a {
+    	color: white;              /* default */
+    	text-decoration: none;     /* no underline */
+    	margin-left: 30px;
+    	font-size: 16px;
+    	font-weight: 500;
+    	transition: color 0.2s ease;    /* smooth color transition */
+    	cursor: pointer;
+}
+
+/* HOVER: turns silver */
+.nav-right a:hover {
+    	color: #C7CCD5;
+	font-style: italic;
+}
+
+.nav-logo {
+	height: 80px;     /* adjust this value to make smaller or bigger */
+    	width: auto;      /* keeps proportions */
+    	display: block;
+	opacity: 0.7;
+}
+
+.text-btn {
+    color: white;             /* normal color */
+    text-decoration: none;    /* no underline */
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease, font-style 0.2s ease;
+}
+
+.text-btn:hover {
+    color: #C7CCD5;           /* silver hover */
+    font-style: italic;       /* italic on hover */
+}
+
+.hero-underline {
+    width: 35vw;         /* adjust length */
+    border: none;
+    border-top: 3px solid #ffffff;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 80px;
+    margin-top: 130px;
+    max-width: 1200px;    /* restricts to 3 cards per row */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    	background: rgba(255,255,255,0.08);
+    	border-radius: 16px;
+    	display: flex;
+	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	text-decoration: none;
+    	color: white;
+
+    	font-size: 22px;
+    	font-weight: 600;
+
+    	box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    	transition: 0.25s ease;
+}
+
+.project-card img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;     /* keeps entire image visible */
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Hover animation = button effect */
+.project-card:hover {
+    	transform: translateY(-6px);
+    	background: rgba(255,255,255,0.12);
+    	box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+}
+
+.experience-slot {
+  	max-width: 1100px;
+  	margin: 0 auto;          /* center whole block */
+  	padding: 80px 40px;
+}
+
+.experience-title {
+  	font-size: 48px;
+  	margin-bottom: 40px;
+}
+
+.experience-grid {
+  	display: grid;
+  	grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  	column-gap: 80px;
+  	row-gap: 20px;
+  	position: relative;
+}
+
+/* vertical line in the middle */
+.experience-grid::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 50%;
+  	width: 1px;
+  	background: #eee;
+}
+
+.experience-card {
+  	padding: 40px 0;
+}
+
+.experience-ul {
+  	color: #C7CCD5;       /* text color */
+  	font-style: italic;   /* italic text */
+}
+
+.experience-date {
+	font-size: 14px;
+    	color: #d0d6e0;
+    	font-style: italic;
+    	margin-top: -10px;
+    	margin-bottom: 12px;
+}
+
+.education-grid {
+	display: grid;
+  	grid-template-columns: repeat(1, 1fr); /* 2 equal columns */
+  	column-gap: 80px;
+  	row-gap: 20px;
+  	position: relative;
+}
+
+.contact {
+  	text-align: center;
+  	padding: 40px 20px;
+}
+
+.contact-subtitle {
+  	margin-top: 10px;
+  	color: #d0d6e0;
+  	font-size: 16px;
+}
+
+.contact-grid {
+  	display: flex;
+  	justify-content: center;
+  	gap: 50px;
+  	margin-top: 10px;
+}
+
+.contact-item {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+.contact-item i {
+  	font-size: 32px;
+  	margin-bottom: 10px;
+  	color: #d0d6e0;
+}
+
+.contact-item a {
+  	color: #ffffff;
+  	text-decoration: none;
+  	font-size: 15px;
+  	transition: 0.2s;
+}
+
+.contact-item a:hover {
+	color: #C7CCD5;           /* silver hover */
+    	font-style: italic;       /* italic on hover */
+}
