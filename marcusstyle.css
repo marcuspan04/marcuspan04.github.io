@@ -347,8 +347,10 @@ p {
   /* Headshot scales properly */
   .hero-image img,
   img {
-    max-width: 90%;
-    height: auto;
+    width: 100%;
+    max-width: 350px;   /* controls maximum size */
+    height: auto;       /* prevents stretching */
+    object-fit: contain; /* keeps image proportions */
     display: block;
     margin: 0 auto;
   }
