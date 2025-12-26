@@ -281,3 +281,13 @@ body {
   color: #C7CCD5;
   font-style: italic;
 }
+
+.project-card a,
+.project-card a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-card:hover a {
+  color: #C7CCD5;
+}
